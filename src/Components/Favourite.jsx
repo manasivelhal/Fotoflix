@@ -15,7 +15,7 @@ const Favourite = ({favouritePhotos,handleRemoveFavourite})=> {
           <div className='photos-center'>
           { favouritePhotos.length > 0 ? (
           favouritePhotos.map((image,index)=>{
-          
+            return(          
               <Photos
               key={index}
               {...image}
@@ -25,7 +25,7 @@ const Favourite = ({favouritePhotos,handleRemoveFavourite})=> {
   Added to Favourties
 </span>
 
-              </Photos>
+              </Photos>)
 })
           ): (
             <p>No Favourite Photos yet.</p>
